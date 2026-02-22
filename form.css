@@ -81,3 +81,82 @@ body{
     text-align: justify;
     line-height: 1.4em;
  }
+
+ input[type=email],input[type=password]{
+    width: 95%;
+    height: 40px;
+    padding: 15px;
+    margin: 12px 8px;
+    box-sizing: border-box;
+    color: #2d3cfd;
+    background: #ffffff;
+    border: 1px solid #2d3cfd;
+    outline: none;
+    border-radius: 5px;
+ }
+
+  input[type=email]::placeholder,input[type=password]::placeholder{
+    color: #9da3f9;
+  }
+.front label{
+    padding: 8px 6px;
+    font-size: 14px;
+    color: #6871fa;
+    float: right;
+    cursor: pointer;
+
+}
+.back label{
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: #6871fa;
+    cursor: pointer;
+
+}
+.front label:hover, .back label:hover{
+    color: #2d3cfd;
+}
+button{
+    position: absolute;
+    right: 25%;
+    width: 55%;
+    padding: 7px;
+    color: #eee;
+    background: #2d3cfd;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #2d3cfd;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+button:hover{
+    background: transparent;
+    color: #2d3cfd;
+    border: 2px solid #2d3cfd;
+
+}
+.front button, .back button{
+    bottom: 15%;
+}
+
+@media screen and (max-width:324px) {
+    .container{
+        width: 300px;
+        height: 450px;
+
+    }
+        h2{
+            font-size: 20px;
+        }    
+    p{
+        margin-top: 55px;
+    }
+    .back label{
+        text-align: left;
+    }
+}
